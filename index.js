@@ -46,12 +46,12 @@ async function run() {
         //     res.send(result);
         // })
 
-        app.post('/craft', async (req, res) => {
-            const newCraft = req.body;
-            console.log(newCraft);
-            const result = await craftCollection.insertOne(newCraft);
-            res.send(result);
-        })
+        // app.post('/craft', async (req, res) => {
+        //     const newCraft = req.body;
+        //     console.log(newCraft);
+        //     const result = await craftCollection.insertOne(newCraft);
+        //     res.send(result);
+        // })
 
         app.put('/craft/:id', async (req, res) => {
             const id = req.params.id;
